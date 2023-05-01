@@ -1,0 +1,31 @@
+how to create container?
+
+docker container create --name container_name image_name:image_tag
+
+how to create container with new port?
+
+docker container create --name <container_name> -p <port_baru>:<port_default_server> <image_name>:<image_tag>
+
+how to create and run container?
+
+docker run --name psql-coba -e POSTGRES_USER=saputra -e POSTGRES_PASSWORD=saputra11 -p 5430:5432 -d postgres:14
+
+how to run container?
+
+docker start <container_name>
+
+how to stop container>
+
+docker stop <container_name>
+
+how to see all container?
+
+docker ps -a 
+
+how to see container active?
+
+docker ps 
+
+how to see container running successfull or not?
+
+docker container logs <container_name>

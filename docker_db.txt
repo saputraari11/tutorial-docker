@@ -1,0 +1,22 @@
+how to create container of mongodb?
+
+docker container create --name <container_name> -p <new port>:<default port> -v <volume/location in local>:/data/db -e MONGO_INITDB_ROOT_USERNAME=<username> -e MONGO_INITDB_ROOT_PASSWORD=<password> mongo
+
+how to create container of redis?
+
+docker container create --name <container_name> -p <new_port>:<default port> -v <volume/location in local>:/data redis
+
+how to create container of postgres?
+
+docker container create --name <container_name> -p <new_port>:<default port> -v <volume/location in local>:/data/db -e POSTGRES_PASSWORD=saputra11 postgres
+
+how to create container of mysql?
+
+docker container create --name <container_name> -p <new_port>:<default port> -v <volume/location in local>:/data/db -e MYSQL_USER=saputra -e MYSQL_PASSWORD=saputra11 mysql
+
+how to create container of mariadb?
+
+docker container create --name <container_name> -p <new_port>:<default port> -v <volume/location in local>:/var/lib/mysql -e MARIADB_USER=saputra -e MARIADB_PASSWORD=saputra11 -e MARIADB_ROOT_PASSWORD=indonesia11 mariadb
+
+
+

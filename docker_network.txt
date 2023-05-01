@@ -1,0 +1,15 @@
+how to create network in docker?
+
+docker network create <network_name>
+
+how to see all network in docker?
+
+docker network ls
+
+how to connect existing container to existing network?
+
+docker network conect <network_name> <container_name>
+
+how to remove network?
+
+docker network rm <network_name>

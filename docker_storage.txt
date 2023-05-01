@@ -1,0 +1,11 @@
+how to create new storage in docker?
+
+docker volume create <volume_name>
+
+how to create container and assign to volume?
+
+docker run --name psql-coba -e POSTGRES_USER=saputra -e POSTGRES_PASSWORD=saputra11 -v <volume_name>:<location_data> -p 5430:5432 -d postgres:14
+
+how to remove volume?
+
+docker volume rm <volume_name>

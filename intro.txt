@@ -1,0 +1,7 @@
+container => application
+
+images => file yang mau dideploy menjadi aplikasi
+
+container registry => repository images 
+    - general: docker hub => https://hub.docker.com
+

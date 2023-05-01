@@ -1,0 +1,11 @@
+how to download image?
+
+docker pull <image_name>
+
+how to remove image?
+
+docker rmi <image_name>
+
+how to see all image?
+
+docker images 
