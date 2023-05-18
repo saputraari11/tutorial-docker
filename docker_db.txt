@@ -18,5 +18,8 @@ how to create container of mariadb?
 
 docker container create --name <container_name> -p <new_port>:<default port> -v <volume/location in local>:/var/lib/mysql -e MARIADB_USER=saputra -e MARIADB_PASSWORD=saputra11 -e MARIADB_ROOT_PASSWORD=indonesia11 mariadb
 
+how to backup database with existing volume locally 
+
+docker container create --name mysql -p 3309:3306 -e MYSQL_USER=saputra -e MYSQL_PASSWORD=saputra11 -e MYSQL_ROOT_PASSWORD=saputra11 --mount type=bind,src=/opt/mysql/first,dst=/var/lib/mysql mysql
 
 
